@@ -9,7 +9,7 @@ class tree{
         this.start()
     }
     async start(){
-        new branch(this.rows+1,[canvaW,canvaH], this.length)
+        new branch(this.rows+1,[canvaW/2,canvaH/2], this.length)
     }
 }
 class branch{
