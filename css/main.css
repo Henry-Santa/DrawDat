@@ -1,0 +1,11 @@
+#myCanvas{
+    margin: auto;
+    border: 2px solid rgb(82, 82, 82);
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    position: relative;
+}
+#treeButton{
+    position: absolute;
+}
