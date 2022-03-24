@@ -12,14 +12,28 @@
 
 <body>
     <div>
+        <input id="bk" type="color">
+        <input id="col" type="color">
         <button id="treeButton" onclick="genTree()">
             Gen Tree
         </button>
         <div style="text-align: center">
-            <canvas id="myCanvas" width="1920" height="1080"></canvas>
+            <canvas id="myCanvas" width="1920" height="1080" onclick="doSomething(event,this)"></canvas>
         </div>
     </div>
-    <script src="./tree.js">
+    <script src="./changebk.js"></script>
+    <script src="./getCoords.js"></script>
+    <script src="./tree.js"></script>
+    
+    <script>
+        function doSomething(e,el){
+            console.log(e)
+            const coords = el.relMouseCoords(e);
+            const x = coords.x;
+            const y = coords.y;
+            console.log("x: " + x + " y: " + y)
+            genTree(point=[x*2,y*2])
+        }
     </script>
 </body>
 </html>
