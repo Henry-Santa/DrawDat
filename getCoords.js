@@ -14,6 +14,6 @@ function relMouseCoords(event){
     canvasX = event.pageX - totalOffsetX;
     canvasY = event.pageY - totalOffsetY;
 
-    return {x:canvasX, y:canvasY}
+    return {x:canvasX/2, y:canvasY/2}
 }
 HTMLCanvasElement.prototype.relMouseCoords = relMouseCoords;

@@ -11,15 +11,15 @@
 </head>
 
 <body>
+    <div style="text-align: center">
+        <canvas id="myCanvas" width="1920" height="1080" onclick="doSomething(event,this)"></canvas>
+    </div>
     <div>
         <input id="bk" type="color">
         <input id="col" type="color">
         <button id="treeButton" onclick="genTree()">
             Gen Tree
         </button>
-        <div style="text-align: center">
-            <canvas id="myCanvas" width="1920" height="1080" onclick="doSomething(event,this)"></canvas>
-        </div>
     </div>
     <script src="./changebk.js"></script>
     <script src="./getCoords.js"></script>
